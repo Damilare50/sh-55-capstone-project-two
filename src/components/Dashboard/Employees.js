@@ -21,7 +21,7 @@ const Employees = () => {
       })
     } catch (error) {
       setIsError(true)
-      console.log(error);
+      // console.log(error);
     }
     setIsLoading(false)
   }
@@ -30,7 +30,7 @@ const Employees = () => {
     fetchData()
   }, [])
 
-  console.log(getData)
+  // console.log(getData)
 
   if (isLoading) {
     return <h1>Loading...</h1>
