@@ -52,6 +52,10 @@ const Wrapper = styled.article`
     tr:nth-child(even) {
       background: #F8F8F8;
     }
+
+    tr:hover {
+      background-color: #ddd;
+    }
   }
 
   @media screen and (max-width: 767px) {

@@ -5,6 +5,12 @@ import axios from "axios";
 const ClientSection = styled.section`
   margin: 10px 70px 70px;
 
+  caption {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
   tr:nth-child(even) {
     background-color: #f8f8f8;
   }
