@@ -3,6 +3,8 @@ import styled from "styled-components";
 import axios from "axios";
 
 const ClientSection = styled.section`
+  margin: 10px 70px 70px;
+
   tr:nth-child(even) {
     background-color: #f8f8f8;
   }
@@ -18,6 +20,10 @@ const ClientSection = styled.section`
     width: 50px;
     height: 50px;
     border-radius: 50%;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0 10px 0 0;
   }
 `;
 
@@ -40,8 +46,8 @@ const Clients = () => {
 
   return (
     <ClientSection>
-      <table className="table-auto border-collapse bg-white">
-        <caption className="py-3 text-center text-blue-700 space-x-1 text-xl font-semibold">
+      <table className="table-auto border-collapse bg-white w-full">
+        <caption className=" py-4 text-left md:text-center text-blue-700 space-x-1 text-xl font-semibold">
           CLIENT DETAILS
         </caption>
         <thead>
