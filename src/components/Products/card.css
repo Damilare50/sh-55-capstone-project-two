@@ -1,0 +1,22 @@
+.full-vh{
+    height: 100vh;
+}
+.w-1\/55{
+    width: 24%;
+}
+.box-shadow{
+    box-shadow: 0px 0 9px rgb(0 0 0 / 30%);
+}
+/* @media screen and (min-width: ) { */
+    
+/* } */
+@media screen and (min-width: 1024px) {
+    .lg\:w-1\/55{
+        width: 24%;
+    }
+}
+@media (min-width: 520px) and (max-width: 639px) {
+    .xs\:w-3\/5{
+        width: 60%;
+    }
+}
