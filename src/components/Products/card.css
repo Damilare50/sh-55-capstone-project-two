@@ -7,9 +7,18 @@
 .box-shadow{
     box-shadow: 0px 0 9px rgb(0 0 0 / 30%);
 }
-/* @media screen and (min-width: ) { */
-    
-/* } */
+
+.slideInOut {
+    animation: slide .3s ease;
+    transition: all .3s ease;
+}
+ 
+@keyframes slide {
+    from{left: -75%}
+    to{left: 0}
+}
+
+
 @media screen and (min-width: 1024px) {
     .lg\:w-1\/55{
         width: 24%;

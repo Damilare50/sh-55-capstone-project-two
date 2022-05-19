@@ -9,9 +9,7 @@ export default function Product({productList}) {
             <div></div>
             <div>
                 <h1>{productList[id - 1].name}</h1>
-                {/* <h3>{product_price}</h3>
-                <p>Net price: {net_price}</p>
-                <p>Tax(es): {taxes}</p> */}
+
             </div>
         </div>
         <div>
