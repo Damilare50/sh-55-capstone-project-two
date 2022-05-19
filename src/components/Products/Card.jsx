@@ -41,8 +41,9 @@ export default function Card({ name, image, price, id }) {
             <h3 className="font-bold text-lg ">{name}</h3>
             <p>${price}</p>
             <div className="flex flex-row justify-start mt-2">
-              {starArray.map((i) => (
-                <i
+              {starArray.map((i, id) => (
+                <i 
+                  key={id}
                   className={`${i === 1 ? "text-yellow-400" : "text-gray-400"}`}
                 >
                   <FaStar />

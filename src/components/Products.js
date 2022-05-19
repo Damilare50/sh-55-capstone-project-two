@@ -7,9 +7,8 @@ import './Products/card.css';
 import Sidebar from './Sidebar';
 import { FaUserCircle, FaBars } from 'react-icons/fa';
 
-const Products = ({setProductList, productList}) => {
+const Products = ({setProductList, productList, navIsOpen, setNavIsOpen}) => {
   const [user, setUser] = useState('');
-  const [navIsOpen, setNavIsOpen] = useState(false);
   const fetchApi = async () => {
     let data = await fetch('https://fakerapi.it/api/v1/products?quantity=1')
       .then(response => response.json());

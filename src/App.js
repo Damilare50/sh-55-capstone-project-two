@@ -8,6 +8,8 @@ import Product from './components/Products/Product';
 
 const App = () => {
   const [productList, setProductList] = useState([]);
+  const [navIsOpen, setNavIsOpen] = useState(false);
+
   return (
     <>
       <BrowserRouter>
@@ -16,8 +18,8 @@ const App = () => {
           <Route path='/' element={<Login />} />
           <Route path='/login' element={<Login />} />
           <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/products' element={<Products productList={productList} setProductList={setProductList}/>} />
-          <Route path={`/products/product/:id`} element={<Product productList={productList} />} />
+          <Route path='/products' element={<Products productList={productList} setProductList={setProductList} navIsOpen={navIsOpen} setNavIsOpen={setNavIsOpen}/>} />
+          <Route path={`/products/product/:id`} element={<Product productList={productList}  navIsOpen={navIsOpen} setNavIsOpen={setNavIsOpen}/>} />
         </Routes>
       </BrowserRouter>
     </>
