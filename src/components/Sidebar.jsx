@@ -34,29 +34,29 @@ export default function Sidebar({ isOpen, setIsOpen }) {
           >
             <i className="mr-2">
               <FaHome />
-            </i>{" "}
+            </i>
             Dashboard
           </Link>
         </li>
-        <li className="p-3 mb-2 group hover:bg-white rounded-l-3xl transition-all duration-300">
-          <Link
-            to={"/dashboard"}
-            className="flex items-center flex-row group-hover:text-blue-700"
-          >
-            <i className="mr-2">
-              <FaShoppingBasket />
-            </i>{" "}
-            Products
-          </Link>
-        </li>
-        <li className="p-3 mb-2 group hover:bg-white rounded-l-3xl transition-all duration-300">
+        <li className="p-3 mb-2 group active hover:bg-white rounded-l-3xl transition-all duration-300">
           <Link
             to={"/products"}
             className="flex items-center flex-row group-hover:text-blue-700"
           >
             <i className="mr-2">
+              <FaShoppingBasket />
+            </i>
+            Products
+          </Link>
+        </li>
+        <li className="p-3 mb-2 group hover:bg-white rounded-l-3xl transition-all duration-300">
+          <Link
+            to={"/"}
+            className="flex items-center flex-row group-hover:text-blue-700"
+          >
+            <i className="mr-2">
               <FaUserCog />
-            </i>{" "}
+            </i>
             User Profile
           </Link>
         </li>
@@ -67,14 +67,14 @@ export default function Sidebar({ isOpen, setIsOpen }) {
           >
             <i className="mr-2">
               <FaCogs />
-            </i>{" "}
+            </i>
             Settings
           </Link>
         </li>
       </ul>
       <p className="p-3 mb-2 group hover:bg-white rounded-l-3xl transition-all duration-300">
         <Link
-          to={"/"}
+          to={"/login"}
           className="flex items-center flex-row group-hover:text-blue-700"
         >
           <i className="mr-2">

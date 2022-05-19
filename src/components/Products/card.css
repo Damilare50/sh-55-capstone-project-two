@@ -7,6 +7,12 @@
 .box-shadow{
     box-shadow: 0px 0 9px rgb(0 0 0 / 30%);
 }
+.active{
+    background-color: rgb(219 234 254);
+}
+.active a{
+    color: rgb(29 78 216);
+}
 
 .slideInOut {
     animation: slide .3s ease;
