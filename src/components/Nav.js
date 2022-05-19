@@ -12,14 +12,14 @@ const Wrapper = styled.nav`
   .link {
     font-size: 16px;
     font-weight: 500;
-    padding: 18px 36px;
+    padding: 15px 30px;
     color: white;
     border-radius: 12px;
     margin-right: 1rem;
   }
 
   button {
-    padding: 18px 36px;
+    padding: 15px 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
