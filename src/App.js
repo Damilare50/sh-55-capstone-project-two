@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        {/* <Nav /> */}
+        <Nav />
         <Routes>
           <Route path='/' element={<Login />} />
           <Route path='/login' element={<Login />} />

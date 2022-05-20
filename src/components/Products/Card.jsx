@@ -34,7 +34,7 @@ export default function Card({ name, image, price, id }) {
       <Link className="inline-block" to={`/products/product/${id}`}>
         <FaShoppingCart color="white" className="absolute top-3 right-3 w-4" />
         <div className="rounded-xl rounded-b-none overflow-hidden ">
-          <img src={image} alt="card-image" />
+          <img src={image} alt="card-imag" />
         </div>
         <div>
           <div className="ml-2 sm:ml-0 px-4 py-3 flex flex-col justify-between ">

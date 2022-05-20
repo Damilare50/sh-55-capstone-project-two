@@ -5,10 +5,9 @@ import {
   FaSignOutAlt,
   FaHome,
   FaShoppingBasket,
-  FaCogs,
-  FaUserCog,
   FaTimesCircle,
 } from "react-icons/fa";
+// import { FaCogs, FaUserCog } from "react-icons/fa";
 
 export default function Sidebar({ isOpen, setIsOpen }) {
   return (
@@ -49,7 +48,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
             Products
           </Link>
         </li>
-        <li className="p-3 mb-2 group hover:bg-white rounded-l-3xl transition-all duration-300">
+        {/* <li className="p-3 mb-2 group hover:bg-white rounded-l-3xl transition-all duration-300">
           <Link
             to={"/"}
             className="flex items-center flex-row group-hover:text-blue-700"
@@ -59,8 +58,8 @@ export default function Sidebar({ isOpen, setIsOpen }) {
             </i>
             User Profile
           </Link>
-        </li>
-        <li className="p-3 mb-2 group hover:bg-white rounded-l-3xl transition-all duration-300">
+        </li> */}
+        {/* <li className="p-3 mb-2 group hover:bg-white rounded-l-3xl transition-all duration-300">
           <Link
             to={"/"}
             className="flex items-center flex-row group-hover:text-blue-700"
@@ -70,7 +69,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
             </i>
             Settings
           </Link>
-        </li>
+        </li> */}
       </ul>
       <p className="p-3 mb-2 group hover:bg-white rounded-l-3xl transition-all duration-300">
         <Link

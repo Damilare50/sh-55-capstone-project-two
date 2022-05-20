@@ -40,9 +40,19 @@ const Wrapper = styled.article`
     font-weight: 500;
     }
 
-    .disabled {
-      cursor: not-allowed;
+    .disabler {
+      pointer-events: none;
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    form {
+
+      input {
+      width: 280px;
+      }
+    }
+    
   }
 `
 
@@ -78,7 +88,7 @@ const Login = () => {
     e.preventDefault();
 
     sessionStorage.setItem('current_user', JSON.stringify(loginData));
-    window.location = '/dashboard'
+    window.location = '/products'
   }
 
 
@@ -90,7 +100,7 @@ const Login = () => {
         <input className='' type="email" name="userEmail" id="userEmail" onChange={handleChange} />
         <label htmlFor="userPassword">Password:</label>
         <input className='' type="password" name="userPassword" id="userPassword" onChange={handleChange} />
-        <button className={isError ? 'bg-blue-700' : 'bg-blue-700'} type='submit'>Sign In</button>
+        <button className={isError ? 'bg-blue-700 disabler' : 'bg-blue-700'} type='submit'>Sign In</button>
       </form>
     </Wrapper>
   )
