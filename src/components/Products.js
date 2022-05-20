@@ -9,12 +9,13 @@ import { FaUserCircle, FaBars } from 'react-icons/fa';
 
 const Products = ({setProductList, productList, navIsOpen, setNavIsOpen}) => {
   const [user, setUser] = useState('');
-  const fetchApi = async () => {
-    let data = await fetch('https://fakerapi.it/api/v1/products?quantity=1')
-      .then(response => response.json());
-      setProductList(data.data);
-  }
+  
   useEffect(() => {
+    const fetchApi = async () => {
+      let data = await fetch('https://fakerapi.it/api/v1/products?quantity=1')
+        .then(response => response.json());
+        setProductList(data.data);
+    }
     fetchApi();
     let userEmail = JSON.parse(sessionStorage.getItem('current_user')).userEmail;
     setUser(userEmail);
@@ -22,7 +23,7 @@ const Products = ({setProductList, productList, navIsOpen, setNavIsOpen}) => {
     return () => {
       window.removeEventListener('load', fetchApi);
     }
-  }, []);
+  }, [setProductList,user]);
 
   return ( 
     <div className='relative flex flex-row border-2 border-blue-700 rounded-r-3xl overflow-hidden full-vh'>

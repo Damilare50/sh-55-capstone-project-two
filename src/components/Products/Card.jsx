@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { FaShoppingCart, FaStar, FaStarHalf } from "react-icons/fa";
+import React from "react";
+import { FaShoppingCart, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./card.css";
 
