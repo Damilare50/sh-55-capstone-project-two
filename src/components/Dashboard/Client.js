@@ -3,7 +3,13 @@ import styled from "styled-components";
 import axios from "axios";
 
 const ClientSection = styled.section`
-  margin: 10px 70px 70px;
+  padding: 10px 70px 70px;
+  /* box-shadow: 15px 15px 50px rgba( 0, 0, 0, 0.2 ); */
+
+  table {
+    max-width: 100%;
+    width: 100%;
+  }
 
   caption {
     font-size: 20px;
@@ -29,7 +35,7 @@ const ClientSection = styled.section`
   }
 
   @media (max-width: 767px) {
-    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
   }
 `;
 
@@ -52,28 +58,28 @@ const Clients = () => {
 
   return (
     <ClientSection>
-      <table className="table-auto border-collapse bg-white w-full">
+      <table className="table-auto border-collapse bg-whites">
         <caption className=" py-4 text-left md:text-center text-blue-700 space-x-1 text-xl font-semibold">
           CLIENT DETAILS
         </caption>
         <thead>
           <tr className="">
             <th
-              className="hidden md:block border-2 border-dirty-white-300 py-3 text-left bg-blue-700 text-white
+              className="hidden md:block py-3 text-left bg-blue-700 text-white
              "
             >
               Image
             </th>
-            <th className="border-2 border-dirty-white-300 py-3 text-left bg-blue-700 text-white">
+            <th className="py-3 text-left bg-blue-700 text-white">
               Name
             </th>
-            <th className="border-2 border-dirty-white-300 py-3 text-left bg-blue-700 text-white">
+            <th className="py-3 text-left bg-blue-700 text-white">
               Email
             </th>
-            <th className="border-2 border-dirty-white-300 py-3 text-left bg-blue-700 text-white">
+            <th className="py-3 text-left bg-blue-700 text-white">
               Phone Number
             </th>
-            <th className="border-2 border-dirty-white-300 py-3 pr-2 text-left bg-blue-700 text-white">
+            <th className="py-3 pr-2 text-left bg-blue-700 text-white">
               Gender
             </th>
           </tr>
@@ -81,19 +87,19 @@ const Clients = () => {
         <tbody>
           {data.map((detail) => (
             <tr className="" key={detail.id}>
-              <td className="hidden md:block border-2 border-dirty-white-300 p-2 ">
+              <td className="hidden md:block p-2 ">
                 <img className="image" src={detail.image} alt="customer pic" />
               </td>
-              <td className="border-2 border-dirty-white-300 p-2">
+              <td className="p-2">
                 {detail.firstname} {detail.lastname}
               </td>
-              <td className="border-2 border-dirty-white-300 p-2">
+              <td className="p-2">
                 {detail.email}
               </td>
-              <td className="border-2 border-dirty-white-300 p-2">
+              <td className="p-2">
                 {detail.phone}
               </td>
-              <td className="border-2 border-dirty-white-300 p-2">
+              <td className="p-2">
                 {detail.gender}
               </td>
             </tr>

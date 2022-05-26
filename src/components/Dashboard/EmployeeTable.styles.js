@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.article`
-  margin: 10px 70px 70px;
-  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+  padding: 10px 70px 70px;
+  /* box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 ); */
 
   table {
     border-radius: 5px;
@@ -59,8 +59,8 @@ const Wrapper = styled.article`
   }
 
   @media screen and (max-width: 767px) {
-    margin: 0;
-    margin-right: 10px;
+    padding: 0;
+    padding-right: 10px;
     
     :before {
       content: "Scroll horizontally >";
